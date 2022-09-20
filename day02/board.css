@@ -1,0 +1,18 @@
+table {
+    text-align: center;
+    background: yellow;
+    color: blue;
+}
+#finish {
+    font-size: 20px;
+    color: green;
+}
+#finish:hover {
+    background: red;
+}
+.inputtext {
+    background: pink;
+}
+.rowtext {
+    background: white   ;
+}
