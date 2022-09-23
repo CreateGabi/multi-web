@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('#b1').click(function() {
+                c1Value = $('#c1').val()
+                c2Value = $('#c2').val()
+                if (c2Value == '계좌이체') {
+                    $('#result').html(c1Value * 0.8 + '<br>')
+                } if ((c2Value == '신용카드')) {
+                    
+                } else {
+                    
+                }
+            })
+
+            $('#b2').click(function() {
+                c1Value = $('#c1').val()
+                $('#result').append(c1Value + '<br>')
+            })
+            $('#b3').click(function() {
+                c2Value = $('#c2').val()
+                $('#result').append('<img src="car.png"/>' + c2Value + '<br>')
+            })
+        })
+    </script>
+</head>
+<body>
+    결제금액 : <input type="text" id="c1"><br>
+    1)계좌이체, 2)신용카드, 3)휴대폰결제
+    결제수단 : <input type="text" id="c2">
+    <button id="b1">결제하기</button><br>
+    <hr>
+    회원가입할 id입력: <input type="text" id="c3">
+    <button id="b2">회원가입시 id중복 체크</button><br>
+    <hr>
+    인증받을 전화번호 입력: <input type="text" id="c4">
+    <button id="b3">인증번호 받기</button><br>
+    <hr>
+    <div id="result"></div>
+</body>
+</html>
